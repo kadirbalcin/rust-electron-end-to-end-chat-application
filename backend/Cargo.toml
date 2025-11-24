@@ -1,0 +1,12 @@
+[package]
+name = "rustdesk_backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+scrap = "0.5"  # mevcut en son sürüm
+sysinfo = "0.29"
+sha2 = "0.10"
+rand = "0.8"
+lazy_static = "1.5.0"

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      #messages {
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Client ID: <span id="cid"></span></h2>
+
+    <input id="targetId" placeholder="Target ID" />
+    <button id="connectBtn">Connect</button>
+    <button id="disconnectBtn" disabled>Disconnect</button>
+
+    <div id="incoming" style="margin-top: 20px; display: none">
+      <h3>Incoming request from: <span id="incomingId"></span></h3>
+      <button id="acceptBtn">Accept</button>
+    </div>
+
+    <h3>Messages</h3>
+    <div id="messages"></div>
+
+    <input id="msgInput" placeholder="Message..." disabled />
+    <button id="sendBtn" disabled>Send</button>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
